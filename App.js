@@ -132,17 +132,16 @@ function HomeScreen({navigation}){
   }, [])
 
   function getImage(code){
-    // CRIPTO
+    // CRIPTOMOEDAS
     if(code === 'BTC') return 'https://cryptologos.cc/logos/bitcoin-btc-logo.png';
     if(code === 'ETH') return 'https://cryptologos.cc/logos/ethereum-eth-logo.png';
     if(code === 'LTC') return 'https://cryptologos.cc/logos/litecoin-ltc-logo.png';
     if(code === 'XRP') return 'https://cryptologos.cc/logos/xrp-xrp-logo.png';
     if(code === 'DOGE') return 'https://cryptologos.cc/logos/dogecoin-doge-logo.png';
 
-    // EURO (igual seu antigo)
+   
     if(code === 'EUR') return 'https://flagcdn.com/w40/eu.png';
 
-    // PADRÃO
     return `https://flagcdn.com/w40/${code.toLowerCase().slice(0,2)}.png`;
   }
 
